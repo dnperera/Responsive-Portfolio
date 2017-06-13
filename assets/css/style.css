@@ -39,7 +39,7 @@
 		color: #fff;
 		float: left;
 		padding: 32px;
-		width: 25%;
+		width: 26%;
 		margin-left: 50px;
 		font-size: 20px;
 	}
@@ -77,7 +77,7 @@
 
 	#content{
 		float: left;
-		width: 630px;
+		width: 60%;
 		background-color: #fff;
 		border: 2px solid #dddddd;
 		margin-top: 20px;
@@ -130,7 +130,7 @@
 	#socialLinks {
 		
 		float: right;
-		width: 270px;
+		width: 30%;
 		background-color: #fff;
 		border: 2px solid #dddddd;
 		margin-top: 20px;
@@ -186,7 +186,7 @@
 	background-color: #fff;
 	border: 2px solid #dddddd;
 	margin-top: 20px;
-	margin-left: 10px;
+	margin-left: 20px;
 	/*padding: 10px;*/
 	padding-left: 50px;
 	padding-right: 50px;
@@ -291,7 +291,20 @@
 		color: #a9abad;
 	}
 
+/* Media Responce  - When Screen size < 980 pxv*/
+body {
+   
+    width: 90%;
+    margin:0 auto;
 
+}
+
+/*Portfolio page */
+
+#contentimg {
+	width: 60%;
+}
+/* End 980 pix*/
 
 /* Media Responce  - When Screen size < 768 pxv*/
 
@@ -326,7 +339,7 @@
 
 	#contentimg{
 
-		float: left;
+		/*float: left;*/
 		width: 90%;
 		background-color: #fff;
 		border: 2px solid #dddddd;
@@ -341,7 +354,7 @@
 	.galleryimg {
 	  position: relative;
 	  float: left;
-	  width: 274px;
+	  width: 45%;
 	  /*margin: 20px 0 25px;*/
 	  margin-right: 20px;
 	  overflow: auto;
@@ -357,9 +370,9 @@
 
 	.galleryimg h3 {
 	  position: absolute;
-	  bottom: 20px;
+	  bottom: 10px;
 	  width: 100%;
-	  padding: 15px;
+	  padding: 5px;
 	  margin-bottom: 0;
 	  font-weight: 300;
 	  line-height: 30px;
@@ -371,9 +384,10 @@
 
 	
     #socialLinks {
-    	float: left;
+    	/*float: left;*/
     	width: 90%;
     	margin-left: 10px;
+    	margin-right: 60px;
     	margin-bottom: 20px;
     	padding-top: 10px;
     	padding-bottom: 10px;
@@ -398,6 +412,8 @@
 
 }
 /* End Media Responce  - When Screen size < 768 pxv*/
+
+
 
 /* Media Responce  - When Screen size < 640 pxv*/
 
@@ -458,7 +474,7 @@
 
 /*Portfolio Page*/
 
-contentimg{
+.contentimg{
 
 	float: left;
 	width: 90%;
