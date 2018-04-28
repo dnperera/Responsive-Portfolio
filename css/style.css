@@ -1,0 +1,25 @@
+/*
+First Perform Basic Reset 
+ */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #000000;
+	padding: 30px;
+}
+
+.header {
+	height: 95vh;
+	background-image: linear-gradient(to right, rgb(242, 127, 41, 0.8), rgb(181, 87, 18, 0.8)),
+		url(../images/portfolio-header.jpg);
+	background-size: cover;
+	background-position: center;
+}
