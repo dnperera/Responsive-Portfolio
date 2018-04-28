@@ -25,4 +25,17 @@ body {
 	background-size: cover;
 	background-position: center;
 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	position: relative;
+}
+
+.profile-photo-box {
+	position: absolute;
+	top: 25%;
+	left: 40%;
+}
+
+.profile-photo {
+	height: 350px;
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
 }
