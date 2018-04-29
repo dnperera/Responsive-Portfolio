@@ -85,7 +85,7 @@ body {
 
 	100% {
 		opacity: 1;
-		transform: translateX(0);
+		transform: translate(0);
 	}
 }
 
@@ -101,7 +101,19 @@ body {
 
 	100% {
 		opacity: 1;
-		transform: translateX(0);
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInButton {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
 	}
 }
 
@@ -114,6 +126,7 @@ body {
 	border-radius: 100px;
 	font-weight: 700;
 	transition: all 0.3s;
+	position: relative;
 }
 
 .btn:hover {
@@ -128,4 +141,35 @@ body {
 .btn-white {
 	background-color: #fff;
 	color: #000000;
+}
+
+.btn::after {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	border-radius: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: all 0.5s;
+}
+
+.btn-white::after {
+	background-color: #fff;
+}
+
+.btn:hover::after {
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+}
+
+.btn-animated {
+	/*animation: moveInButton 0.5s ease-out 0.8s;*/
+	animation-name: moveInButton;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-out;
+	animation-delay: 0.8s;
+	animation-fill-mode: backwards; /* this property will make button invisible during loading*/
 }
