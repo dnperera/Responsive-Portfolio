@@ -25,17 +25,36 @@ body {
 	background-size: cover;
 	background-position: center;
 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-	position: relative;
 }
 
-.profile-photo-box {
+.profile-box {
 	position: absolute;
-	top: 25%;
-	left: 40%;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .profile-photo {
-	height: 350px;
+	height: 300px;
 	-webkit-clip-path: circle(50% at 50% 50%);
 	clip-path: circle(50% at 50% 50%);
+}
+
+.heading-primary {
+	color: #fff;
+}
+
+.heading-primary-main {
+	display: block;
+	font-size: 50px;
+	font-weight: 900;
+	letter-spacing: 8px;
+}
+
+.heading-primary-sub {
+	display: block;
+	font-size: 25px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	text-align: center;
 }
