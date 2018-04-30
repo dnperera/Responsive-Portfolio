@@ -1,59 +1,16 @@
 /* First Perform Basic Reset */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #000;
-  padding: 3rem; }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(211, 92, 4, 0.85), rgba(153, 67, 4, 0.85)), url(../images/portfolio-header.jpg);
-  background-size: cover;
-  background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  position: relative; }
-  .header__profile-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .header__profile-photo {
-    height: 30rem;
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%); }
-
-.heading-primary {
-  color: #fff;
-  backface-visibility: hidden;
-  margin-bottom: 3rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 5rem;
-    font-weight: 900;
-    letter-spacing: 0.8rem;
-    animation-name: moveInLeft;
-    animation-duration: 3s;
-    animation-timing-function: ease-out; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 0.5rem;
-    animation: moveInRight 3s ease-out;
-    /*	animation-name: moveInLeft;
-		animation-duration: 3s;
-		animation-timing-function: ease-out;*/ }
+  box-sizing: border-box; }
 
 @keyframes moveInLeft {
   0% {
@@ -82,6 +39,35 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #000;
+  padding: 3rem; }
+
+.heading-primary {
+  color: #fff;
+  backface-visibility: hidden;
+  margin-bottom: 3rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 0.8rem;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    animation: moveInRight 3s ease-out;
+    /*	animation-name: moveInLeft;
+		animation-duration: 3s;
+		animation-timing-function: ease-out;*/ }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -133,3 +119,44 @@ body {
   animation-delay: 0.8s;
   animation-fill-mode: backwards;
   /* this property will make button invisible during loading*/ }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(211, 92, 4, 0.85), rgba(153, 67, 4, 0.85)), url(../images/portfolio-header.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  position: relative; }
+  .header__profile-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__profile-photo {
+    height: 30rem;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%); }
+
+.heading-primary {
+  color: #fff;
+  backface-visibility: hidden;
+  margin-bottom: 3rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 0.8rem;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    animation: moveInRight 3s ease-out;
+    /*	animation-name: moveInLeft;
+		animation-duration: 3s;
+		animation-timing-function: ease-out;*/ }

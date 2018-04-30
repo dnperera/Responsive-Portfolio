@@ -1,0 +1,28 @@
+.header {
+	height: 95vh;
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-header-light, 0.85),
+			rgba($color-header-dark, 0.85)
+		),
+		url(../images/portfolio-header.jpg);
+	background-size: cover;
+	background-position: top;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+	position: relative;
+
+	&__profile-box {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	&__profile-photo {
+		height: 30rem;
+		-webkit-clip-path: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);
+	}
+}
