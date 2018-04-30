@@ -69,6 +69,23 @@ body {
 		animation-duration: 3s;
 		animation-timing-function: ease-out;*/ }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #d35c04, #994304);
+  display: inline-block;
+  letter-spacing: 2px;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.3s; }
+  .heading-secondary:hover {
+    transform: scale(1.5);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
+
+.u-center-text {
+  text-align: center; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -166,3 +183,8 @@ body {
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.section-projects {
+  background-color: #e5e6e8;
+  padding: 25rem 0;
+  margin-top: -15vh; }
