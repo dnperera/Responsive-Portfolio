@@ -2,174 +2,138 @@
 First Perform Basic Reset 
  */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.7;
-	color: #000000;
-	padding: 30px;
-}
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000000;
+  padding: 30px; }
 
 .header {
-	height: 95vh;
-	background-image: linear-gradient(
-			to right bottom,
-			rgba(211, 92, 4, 0.85),
-			rgba(153, 67, 4, 0.85)
-		),
-		url(../images/portfolio-header.jpg);
-	background-size: cover;
-	background-position: top;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-	position: relative;
-}
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(211, 92, 4, 0.85), rgba(153, 67, 4, 0.85)), url(../images/portfolio-header.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  position: relative; }
 
 .profile-box {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
 
 .profile-photo {
-	height: 300px;
-	-webkit-clip-path: circle(50% at 50% 50%);
-	clip-path: circle(50% at 50% 50%);
-}
+  height: 300px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%); }
 
 .heading-primary {
-	color: #fff;
-	backface-visibility: hidden;
-	margin-bottom: 30px;
-}
+  color: #fff;
+  backface-visibility: hidden;
+  margin-bottom: 30px; }
 
 .heading-primary-main {
-	display: block;
-	font-size: 50px;
-	font-weight: 900;
-	letter-spacing: 8px;
-
-	animation-name: moveInLeft;
-	animation-duration: 3s;
-	animation-timing-function: ease-out;
-}
+  display: block;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 8px;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease-out; }
 
 .heading-primary-sub {
-	display: block;
-	font-size: 25px;
-	font-weight: 700;
-	letter-spacing: 5px;
-	animation: moveInRight 3s ease-out;
-	/*	animation-name: moveInLeft;
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  animation: moveInRight 3s ease-out;
+  /*	animation-name: moveInLeft;
 	animation-duration: 3s;
-	animation-timing-function: ease-out;*/
-}
+	animation-timing-function: ease-out;*/ }
 
 @keyframes moveInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-100px);
-	}
-
-	80% {
-		transform: translateX(20px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translate(0);
-	}
-}
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 @keyframes moveInRight {
-	0% {
-		opacity: 0;
-		transform: translateX(100px);
-	}
-
-	80% {
-		transform: translateX(-20px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translate(0);
-	}
-}
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 @keyframes moveInButton {
-	0% {
-		opacity: 0;
-		transform: translateY(50px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translate(0);
-	}
-}
+  0% {
+    opacity: 0;
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 .btn:link,
 .btn:visited {
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 15px 40px;
-	display: inline-block;
-	border-radius: 100px;
-	font-weight: 700;
-	transition: all 0.3s;
-	position: relative;
-}
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  font-weight: 700;
+  transition: all 0.3s;
+  position: relative; }
 
 .btn:hover {
-	transform: translateY(-4px);
-	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-}
+  transform: translateY(-4px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); }
+
 .btn:active {
-	transform: translateY(-2px);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
 
 .btn-white {
-	background-color: #fff;
-	color: #000000;
-}
+  background-color: #fff;
+  color: #000000; }
 
 .btn::after {
-	content: '';
-	display: inline-block;
-	height: 100%;
-	width: 100%;
-	border-radius: 100px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	transition: all 0.5s;
-}
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s; }
 
 .btn-white::after {
-	background-color: #fff;
-}
+  background-color: #fff; }
 
 .btn:hover::after {
-	transform: scaleX(1.4) scaleY(1.6);
-	opacity: 0;
-}
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; }
 
 .btn-animated {
-	/*animation: moveInButton 0.5s ease-out 0.8s;*/
-	animation-name: moveInButton;
-	animation-duration: 0.5s;
-	animation-timing-function: ease-out;
-	animation-delay: 0.8s;
-	animation-fill-mode: backwards; /* this property will make button invisible during loading*/
-}
+  /*animation: moveInButton 0.5s ease-out 0.8s;*/
+  animation-name: moveInButton;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  /* this property will make button invisible during loading*/ }
