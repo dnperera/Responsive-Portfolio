@@ -197,13 +197,15 @@ body {
     color: #000; }
   .card__details {
     padding: 0 2rem; }
-    .card__details ul {
-      list-style: none;
-      width: 90%; }
-    .card__details li {
+    .card__details-app-description {
+      width: 90%;
       text-align: left;
       font-size: 1.6rem;
       padding: 1rem; }
+    .card__details-tech {
+      display: inline-block; }
+      .card__details-tech img {
+        height: 5rem; }
 
 .header {
   height: 95vh;

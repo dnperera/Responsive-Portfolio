@@ -69,15 +69,19 @@
 
 	&__details {
 		padding: 0 2rem;
-		ul {
-			list-style: none;
-			width: 90%;
-		}
 
-		li {
+		&-app-description {
+			width: 90%;
 			text-align: left;
 			font-size: 1.6rem;
 			padding: 1rem;
+		}
+
+		&-tech {
+			display: inline-block;
+			img {
+				height: 5rem;
+			}
 		}
 	}
 }
