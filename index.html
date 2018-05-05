@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/alertify.default.css">
 	<title>Dayan Perera - Full Stack Web Developer</title>
 	<meta name="description" content="Dayan Perera full stack web and mobile app developer,software engineer providing services to design & develope modern, responsive websites and mobile applications">
 </head>
@@ -220,7 +221,7 @@
 			<div class="row">
 				<div class="contact">
 					<div class="contact__form">
-						<form action="#" class="form">
+						<form id="contactForm" action="#" class="form">
 							<div class="u-margin-bottom-medium">
 								<h2 class="heading-secondary">
 									Contact
@@ -247,7 +248,7 @@
 								<label for="message" class="form__label">Message</label>
 							</div>
 							<div class="form__group">
-								<button class="btn btn--green">Submit &rarr;</button>
+								<button id="btnSubmit" class="btn btn--green">Submit &rarr;</button>
 							</div>
 						</form>
 					</div>
@@ -321,5 +322,12 @@
 			</div>					
 		</div>	
 	</section> -->
+	
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script src="/js/alertify.min.js"></script>
+	<script src="/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
