@@ -1,13 +1,16 @@
 $('#contactForm').submit(function(event) {
+	console.log($(this).serialize());
+
+	$.ajax({
+		method: 'POST',
+		url: '//formspree.io/dayannp@gmail.com',
+		data: $(this).serialize(),
+		datatype: 'json',
+	});
+
 	event.preventDefault();
 	$(this)
 		.get(0)
 		.reset();
-	alertify.set('notifier', 'position', 'top-center');
-	alertify.success('Message sent');
+	alertify.success('Message sent.');
 });
-
-// $( "#btnSubmit" ).click(function(ev) {
-
-//   $( "#target" ).submit();
-// });
