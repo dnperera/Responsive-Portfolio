@@ -3,7 +3,8 @@ $('#contactForm').submit(function(event) {
 	$(this)
 		.get(0)
 		.reset();
-	return alertify.success('Message sent');
+	alertify.set('notifier', 'position', 'top-center');
+	alertify.success('Message sent');
 });
 
 // $( "#btnSubmit" ).click(function(ev) {
