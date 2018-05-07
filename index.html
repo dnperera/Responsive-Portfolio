@@ -217,31 +217,60 @@
 				</div>
 			</div>	
 		</section>
-
 		<section class="section-contact">
 			<div class="row">
 				<div class="contact">
 					<div class="contact__form">
 						<form id="contactForm" action="mailer.php" class="form">
-							<div class="u-margin-bottom-medium">
+							<div class="u-margin-bottom-small">
 								<h2 class="heading-secondary">
 									Contact
 								</h2>
 							</div>
-							<div class="email u-margin-bottom-medium">
+							<div class="form__group">
+								<input class="form__input" type="text" id="name"name="name" placeholder="Your Name" required>
+								<label for="name" class="form__label">Name</label>
+							</div>
+
+							<div class="form__group">
+								<input class="form__input" type="email" id="email"name="email" placeholder="Email Address" required>
+								<label for="email" class="form__label">Email Address</label>
+							</div>
+							<div class="form__group">
+								<input class="form__input" type="text" id="subject"name="subject" placeholder="Subject" required>
+								<label for="subject" class="form__label">Subject</label>
+							</div>
+
+							<div class="form__group">
+								<textarea class="form__input"  id="message"name="message" placeholder="Message" cols="30" rows="5" required></textarea>
+								<label for="message" class="form__label">Message</label>
+							</div>
+<!-- 							<div class="form__group g-recaptcha" data-sitekey="6LdTdFcUAAAAAByypkvTHmE3tjsE3gwbbK9ix_xj"></div> -->
+							<div class="form__group">
+								<input type="text" name="_gotcha" style="display:none" />
+								<button id="btnSubmit" class="btn btn--green">Submit &rarr;</button>
+							</div>
+							<div class="contact__social-links">
+									<a 
+										href="https://github.com/dnperera" class="btn-text" target="_blank"> 
+										<i class="fa fa-github"
+											style="font-size:25px">
+											Github Repo 
+										</i>
+									</a>
+
+									<a 
+										href="https://www.linkedin.com/in/dayan-nishantha-perera/" target="_blank" class="btn-text"> 
+										<i class="fa fa-linkedin-square" style="font-size:25px">
+											Linked In 
+										</i>
+									</a>
+							</div>
+
+							<div class="email u-margin-top-medium">
 								<a href="mailto:dayannp@gmail.com" class="btn btn--white btn--animated ">
 									Email</a>
 							</div>
-							<div class="contact__social-links">
-									<a href="" class="btn-text"> 
-										<i class="fa fa-github"
-										style="font-size:25px">
-										Github Repo </i></a>
-
-									<a href="" class="btn-text"> 
-										<i class="fa fa-linkedin-square" style="font-size:25px">
-										Linked In </i></a>
-							</div>			
 						</form>
 					</div>
 				</div>
@@ -319,7 +348,7 @@
 	  src="https://code.jquery.com/jquery-3.3.1.min.js"
 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	  crossorigin="anonymous"></script>
-	<script src="/js/alertify.min.js"></script>
-	<script src="/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="alertify.min.js"></script>
+	<script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>

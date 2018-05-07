@@ -23,8 +23,6 @@ $mail->AltBody =  $_POST['message'];
 
 if(!$mail->Send())
 {
-   echo "Message could not be sent. 
-";
    echo "Mailer Error: " . $mail->ErrorInfo;
    exit;
 }

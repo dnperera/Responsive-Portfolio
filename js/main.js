@@ -1,6 +1,6 @@
 $('#contactForm').submit(function(event) {
 	console.log($(this).serialize());
-
+	event.preventDefault();
 	$.ajax({
 		type: 'POST',
 		url: $('#contactForm').attr('action'),
@@ -8,13 +8,47 @@ $('#contactForm').submit(function(event) {
 	})
 		.done(function(response) {
 			console.log(response);
-			$(this)[0].reset();
-			// $(this)
-			// 	.get(0)
-			// 	.reset();
+			//$(this)[0].reset();
+			$(this)
+				.get(0)
+				.reset();
 			alertify.success('Message sent.');
 		})
 		.fail(function(data) {
 			console.log(data.responseText);
 		});
+});
+
+$(document).ready(function() {
+	$('#submit').click(function() {
+		var name = $('#name').val();
+		var email = $('#email').val();
+		var password = $('#password').val();
+		var contact = $('#contact').val();
+		// Returns successful data submission message when the entered information is stored in database.
+		var dataString =
+			'name1=' +
+			name +
+			'&email1=' +
+			email +
+			'&password1=' +
+			password +
+			'&contact1=' +
+			contact;
+		if (name == '' || email == '' || password == '' || contact == '') {
+			alert('Please Fill All Fields');
+		} else {
+			// AJAX Code To Submit Form.
+			$.ajax({
+				type: 'POST',
+				url: 'ajaxsubmit.php',
+				data: dataString,
+				cache: false,
+				success: function(result) {
+					alert(result);
+				},
+			});
+		}
+		return false;
+	});
 });

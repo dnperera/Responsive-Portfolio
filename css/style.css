@@ -101,6 +101,9 @@ body {
 .u-margin-bottom-huge {
   margin-bottom: 10rem !important; }
 
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -369,13 +372,13 @@ body {
   background-image: linear-gradient(to bottom right, #ef910e, #8e5607); }
 
 .contact {
-  background-image: linear-gradient(110deg, rgba(227, 231, 232, 0.9) 0%, rgba(227, 231, 232, 0.9) 50%, transparent 50%), url(../images/contact-form-background.jpeg);
+  background-image: linear-gradient(110deg, rgba(227, 231, 232, 0.9) 0%, rgba(227, 231, 232, 0.9) 50%, transparent 50%), url(../images/contact-form-background-hand.jpeg);
   background-size: cover;
   border-radius: 4px;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3); }
   .contact__form {
     width: 50%;
     padding: 3rem 6rem;
-    height: 50rem; }
+    height: 80rem; }
   .contact__social-links a {
     margin: 1rem 2rem; }
