@@ -1,37 +1,32 @@
 <?php
+require("class.phpmailer.php");
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+$mail = new PHPMailer();
 
-//Load Composer's autoloader
-require 'vendor/autoload.php';
+$mail->IsSMTP();                                      // set mailer to use SMTP
+$mail->Host = "box5176.bluehost.com";// specify main and backup server
+$mail->SMTPAuth = true;     // turn on SMTP authentication
+$mail->Username = "dayannp@dayanperera.com";  // SMTP username
+$mail->Password = "Dphp94903$"; // SMTP password
+$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 
-$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
-try {
-    //Server settings
-    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
-    $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp.googlemail.com';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'dayanfullstackdeveloper@gmail.com';                 
-    // SMTP username
-    $mail->Password = 'Denithtp0430$';                           // SMTP password
-    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 465;                                    // TCP port to connect to
+$mail->From = "reply-support@udacity.com";
+$mail->FromName = "Davi ar Udacity";
+$mail->AddAddress("dayannp@dayanperera.com", "Dayan Perera");
 
-    //Recipients
-    $mail->setFrom('dayanperera@yahoo.com', 'SalesForce');
-    $mail->addAddress('dayannp@gmail.com', 'Dayan Perera');     // Add a recipient
+$mail->WordWrap = 50;                                 // set word wrap to 50 characters
+$mail->IsHTML(true);                                  // set email format to HTML
+$mail->Subject = "Build your own webpage";
+$mail->Body    = "Knowing the fundamentals of programming lays the foundation for many careers, including data analysis, front-end, back-end, and mobile web development. By the end of the program, you'll become confident in your ability to think and problem-solve like a programmer, and you’ll be ready to dive deeper into any of those fields.";
+$mail->AltBody = "Knowing the fundamentals of programming lays the foundation for many careers, including data analysis, front-end, back-end, and mobile web development. By the end of the program, you'll become confident in your ability to think and problem-solve like a programmer, and you’ll be ready to dive deeper into any of those fields.";
 
-    //Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+if(!$mail->Send())
+{
+   echo "Message could not be sent. 
+";
+   echo "Mailer Error: " . $mail->ErrorInfo;
+   exit;
+}
 
-    $mail->send();
-    echo 'Message has been sent';
-} catch (Exception $e) {
-    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-}  
+echo "Message has been sent";
 ?>
