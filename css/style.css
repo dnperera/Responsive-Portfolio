@@ -312,19 +312,29 @@ body {
   transform: translateY(-4rem); }
 
 .footer {
-  background-color: #a8a59f;
-  padding: 10rem 0;
-  font-size: 2rem; }
+  background-image: linear-gradient(to bottom right, #d9dce0, #5a5d60);
+  padding: 5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700; }
   .footer__list {
     list-style: none;
     text-align: center; }
   .footer__item {
     display: inline-block;
-    margin-right: 2rem; }
+    margin-right: 5rem; }
   .footer__link:link, .footer__link:visited {
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block; }
+    display: inline-block;
+    color: #994304;
+    padding: 1rem 2rem;
+    transition: all 0.5s;
+    border-radius: 3rem; }
+  .footer__link:hover, .footer__link:active {
+    color: #0c8710;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    border-radius: 3rem; }
 
 .header {
   height: 95vh;
