@@ -104,6 +104,9 @@ body {
 .u-margin-top-medium {
   margin-top: 4rem !important; }
 
+.u-margin-top-samll {
+  margin-top: 2rem !important; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -307,6 +310,21 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem); }
+
+.footer {
+  background-color: #a8a59f;
+  padding: 10rem 0;
+  font-size: 2rem; }
+  .footer__list {
+    list-style: none;
+    text-align: center; }
+  .footer__item {
+    display: inline-block;
+    margin-right: 2rem; }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; }
 
 .header {
   height: 95vh;

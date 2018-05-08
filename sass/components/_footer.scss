@@ -1,0 +1,27 @@
+.footer {
+	background-color: #a8a59f;
+	padding: 10rem 0;
+	font-size: 2rem;
+
+	&____navigation {
+	}
+
+	&__list {
+		list-style: none;
+		text-align: center;
+	}
+
+	&__item {
+		display: inline-block;
+		margin-right: 2rem;
+	}
+
+	&__link {
+		&:link,
+		&:visited {
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+		}
+	}
+}
