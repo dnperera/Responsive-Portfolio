@@ -15,6 +15,12 @@
 		box-shadow: 0rem 2rem 2rem rgba($color-black, 0.5);
 		cursor: pointer;
 		text-align: center;
+		transition: all 0.2s;
+
+		&:active {
+			transform: translateY(-0.5rem);
+			box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2);
+		}
 	}
 
 	&__background {

@@ -404,7 +404,11 @@ body {
   z-index: 2000;
   box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.2s; }
+  .navigation__button:active {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
 
 .navigation__background {
   height: 6rem;
