@@ -8,8 +8,9 @@
 		url(../images/portfolio-header.jpg);
 	background-size: cover;
 	background-position: top;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+	// -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+	// clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+	padding: 40rem 0;
 	position: relative;
 
 	&__links {
@@ -29,7 +30,7 @@
 
 	&__profile-box {
 		position: absolute;
-		top: 40%;
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
