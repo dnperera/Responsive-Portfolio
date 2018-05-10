@@ -27,9 +27,18 @@
 		display: block;
 
 		& a i {
-			font-size: 5rem;
+			font-size: 5.2rem;
 			color: $color-black;
 			margin-bottom: 2rem;
+		}
+
+		&--resume {
+			width: 5rem;
+			display: inline-block;
+			//background-color: $color-white;
+			border-radius: 1rem;
+			border: 3px solid $color-black;
+			box-shadow: 0 2rem 2rem rgba($color-black, 0.5);
 		}
 	}
 

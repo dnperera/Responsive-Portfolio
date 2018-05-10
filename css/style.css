@@ -272,7 +272,7 @@ body {
       font-size: 1.6rem;
       padding: 1rem; }
     .card__details-tech {
-      display: inline-block; }
+      text-align: center; }
       .card__details-tech img {
         height: 5rem; }
   .card__project-detail-view {
@@ -383,9 +383,15 @@ body {
         top: 4rem;
         left: 3rem; } }
     .header__links a i {
-      font-size: 5rem;
+      font-size: 5.2rem;
       color: #000;
       margin-bottom: 2rem; }
+    .header__links--resume {
+      width: 5rem;
+      display: inline-block;
+      border-radius: 1rem;
+      border: 3px solid #000;
+      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5); }
   .header__profile-box {
     position: absolute;
     top: 50%;
@@ -595,3 +601,6 @@ body {
     text-align: center; }
   .contact__buttons a {
     margin: 2rem 2rem; }
+
+.section-resume {
+  padding: 15rem 0; }
