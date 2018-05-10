@@ -146,7 +146,8 @@ body {
   cursor: pointer; }
   @media (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      padding: 1rem 2.5rem; } }
 
 .btn:hover {
   transform: translateY(-0.4rem);
@@ -375,11 +376,16 @@ body {
     position: fixed;
     top: 6rem;
     left: 10rem;
-    z-index: 2000; }
-    .header__links img {
-      cursor: pointer;
-      height: 5rem;
-      margin: 0.5rem; }
+    z-index: 2000;
+    display: block; }
+    @media (max-width: 37.5em) {
+      .header__links {
+        top: 4rem;
+        left: 3rem; } }
+    .header__links a i {
+      font-size: 5rem;
+      color: #000;
+      margin-bottom: 2rem; }
   .header__profile-box {
     position: absolute;
     top: 50%;
@@ -575,12 +581,17 @@ body {
   .contact__form {
     width: 50%;
     padding: 3rem 6rem;
-    height: 80rem; }
+    height: 82rem; }
     @media (max-width: 37.5em) {
       .contact__form {
-        width: 100%; } }
+        width: 100%;
+        height: 78rem; } }
     @media (max-width: 56.25em) {
       .contact__form {
-        width: 100%; } }
+        width: 100%;
+        height: 78rem; } }
   .contact__social-links a {
-    margin: 1rem 2rem; }
+    margin: 1rem 2rem;
+    text-align: center; }
+  .contact__buttons a {
+    margin: 2rem 2rem; }
