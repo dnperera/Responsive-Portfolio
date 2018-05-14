@@ -80,7 +80,8 @@ body {
     animation-timing-function: ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-        letter-spacing: 0.3rem; } }
+        letter-spacing: 0.3rem;
+        font-size: 4rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2.5rem;
@@ -605,3 +606,15 @@ body {
 .section-resume {
   padding: 10rem 22rem;
   background-image: linear-gradient(to bottom right, #d8d25d, #8e8919); }
+  .section-resume iframe {
+    height: 120rem; }
+  @media (max-width: 56.25em) {
+    .section-resume {
+      padding: 5rem 11rem; }
+      .section-resume iframe {
+        height: 70rem; } }
+  @media (max-width: 37.5em) {
+    .section-resume {
+      padding: 5rem 2rem; }
+      .section-resume iframe {
+        height: 48rem; } }

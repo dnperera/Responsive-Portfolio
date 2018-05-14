@@ -56,4 +56,22 @@
 .section-resume {
 	padding: 10rem 22rem;
 	background-image: linear-gradient(to bottom right, #d8d25d, #8e8919);
+
+	iframe {
+		height: 120rem;
+	}
+
+	@include respond(tab-port) {
+		padding: 5rem 11rem;
+		iframe {
+			height: 70rem;
+		}
+	}
+
+	@include respond(phone) {
+		padding: 5rem 2rem;
+		iframe {
+			height: 48rem;
+		}
+	}
 }
