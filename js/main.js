@@ -34,6 +34,10 @@ $('#btnSubmit').click(function(event) {
 	});
 });
 
+$('.navigation__link').on('click', function(event) {
+	console.log(event);
+	$('#navigation-toggle').prop('checked', false);
+});
 // $('#contactForm').submit(function(event) {
 // 	console.log($(this).serialize());
 // 	event.preventDefault();
@@ -54,3 +58,5 @@ $('#btnSubmit').click(function(event) {
 // 			console.log(data.responseText);
 // 		});
 // });
+//
+//https://docs.google.com/document/d/1EJYesfm6VNxEV62fWdm88u5jcpMTTw5imT2ARGNXSe4/edit?usp=sharing
