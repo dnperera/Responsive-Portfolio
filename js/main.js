@@ -35,9 +35,18 @@ $('#btnSubmit').click(function(event) {
 });
 
 $('.navigation__link').on('click', function(event) {
-	console.log(event);
+	//set the navigation toggle checkbox to false to close the navigation .
 	$('#navigation-toggle').prop('checked', false);
+	//smooth scroll to id
+	$('html, body').animate(
+		{
+			scrollTop: $($(this).attr('href')).offset().top,
+		},
+		1000,
+		'linear'
+	);
 });
+
 // $('#contactForm').submit(function(event) {
 // 	console.log($(this).serialize());
 // 	event.preventDefault();
