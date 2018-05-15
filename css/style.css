@@ -303,6 +303,45 @@ body {
       margin-bottom: 3rem; }
     .card__project-detail-view__button-git {
       margin-top: 3rem; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto; }
+      .card__side {
+        height: auto;
+        position: relative;
+        border-radius: 4px; }
+        .card__side--back {
+          transform: rotateY(0); }
+      .card:hover .card__side--front {
+        transform: rotateY(0);
+        cursor: pointer; }
+      .card__project-detail-view {
+        padding: 2rem;
+        text-align: center; }
+        .card__project-detail-view--heading {
+          font-size: 2.5rem;
+          font-weight: 700;
+          text-align: center;
+          color: #000;
+          text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
+          border-bottom: 1px solid #000; }
+        .card__project-detail-view--heading-sub {
+          font-size: 2rem;
+          font-weight: 400;
+          text-align: left;
+          color: #000;
+          margin-top: 2rem;
+          margin-bottom: 1rem; }
+        .card__project-detail-view ul {
+          position: relative;
+          list-style: none;
+          font-size: 1.5rem;
+          font-weight: 700;
+          text-align: left;
+          left: 7rem;
+          margin-bottom: 3rem; }
+        .card__project-detail-view__button-git {
+          margin-top: 3rem; } }
 
 .form__group:not(:last-child) {
   margin-bottom: 1rem; }
